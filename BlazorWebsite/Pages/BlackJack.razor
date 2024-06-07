@@ -1,0 +1,88 @@
+@page "/BlackJack"
+
+<PageTitle>Black Jack</PageTitle>
+<h1>Black Jack</h1>
+
+<p role="status">Player worth: @p.worth</p>
+<p role="status">Dealer worth: @d.worth</p>
+<button class="btn btn-primary" id="startGame" @onclick="startGame">Start Game</button>
+
+<div>
+    <!--    <button class="btn btn-primary" id="double" @onclick="_double">Double</button> -->
+        <button class="btn btn-primary" id="hit" @onclick="hit">Hit</button>
+        <button class="btn btn-primary" id="stand" @onclick="stand">Stand</button>
+    </div>
+    <!-- <button class="btn btn-primary" id="split" @onclick="split">Split</button> -->
+@code {
+    //private int currentCount = 0;
+
+    Random rnd = new();
+    Player p = new();
+    Dealer d = new();
+
+    private void startGame()
+    {
+        //Einsatz
+        addPlayerCard();
+        addDealerCard();
+        addPlayerCard();
+
+    }
+    
+    private void addPlayerCard()
+    {
+        int value = rnd.Next(2, 14);
+        if (value >9 && value < 14)
+        {
+            value = 10;
+        }
+        else if (value == 14)
+        {
+            if (p.worth + value < 22)
+                value = 11;
+            else
+                value = 1;
+        }
+        
+        p.worth =+ value;
+    }
+    
+    private void addDealerCard()
+    {
+        int value = rnd.Next(2, 11);
+        d.worth =+ value;
+    }
+    
+    private void _double()
+    {
+        
+    }
+    
+    private void hit()
+    {
+        //if (p.worth < 21)
+        addPlayerCard();
+    }
+    
+    private void stand()
+    {
+        p.worth = 0;
+        d.worth = 0;
+    }
+    
+    private void split()
+    {
+        
+    }
+    
+    
+    /*private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void DecrementCount()
+    {
+        currentCount--;
+    }*/
+}

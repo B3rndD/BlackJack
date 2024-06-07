@@ -1,0 +1,50 @@
+@page "/guessinggame"
+@using System.Reflection.Emit
+
+
+
+
+
+    <PageTitle>Guessing Game</PageTitle>
+
+    <h1>Guessing a number between 1 and 10</h1>
+
+<p role="status">Current guess: @currentCount</p>
+<p role="status">@Ergebnis</p>
+<div>
+    <button class="btn btn-primary" @onclick="IncrementCount">Counter +</button>
+
+    <button class="btn btn-primary" @onclick="DecrementCount">Counter -</button>
+
+    <button class="btn btn-primary" @onclick="ApplyCount">Guess</button>
+</div>
+
+    @code {
+    private int currentCount = 1;
+    private string Ergebnis = "Please guess a number";
+    
+    private void IncrementCount()
+    {
+        if(currentCount < 10)
+            currentCount++;
+    }
+    private void DecrementCount()
+    {
+        if (currentCount > 1)
+            currentCount--;
+    }
+
+    private void ApplyCount()
+    {
+        Random rnd = new();
+        int num = rnd.Next(1, 11);
+        if (num == currentCount)
+        {
+            Ergebnis = "Your guess was correct";
+            return;
+        }
+
+        Ergebnis = "Your guess was wrong. It was: " + num;
+    }
+
+    }
