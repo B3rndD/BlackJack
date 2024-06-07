@@ -1029,3 +1029,4 @@ C:\Schule\4BHWII\SWP\C# Rider\BlazorWebsite\BlazorWebsite\obj\Debug\net8.0\Blazo
 C:\Schule\4BHWII\SWP\C# Rider\BlazorWebsite\BlazorWebsite\obj\Debug\net8.0\refint\BlazorWebsite.dll
 C:\Schule\4BHWII\SWP\C# Rider\BlazorWebsite\BlazorWebsite\obj\Debug\net8.0\BlazorWebsite.pdb
 C:\Schule\4BHWII\SWP\C# Rider\BlazorWebsite\BlazorWebsite\obj\Debug\net8.0\ref\BlazorWebsite.dll
+C:\Schule\4BHWII\SWP\C# Rider\BlazorWebsite\BlazorWebsite\obj\Debug\net8.0\BlazorWebsite.sourcelink.json
