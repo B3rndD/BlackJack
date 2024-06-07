@@ -3,9 +3,9 @@
 <PageTitle>Black Jack</PageTitle>
 <h1>Black Jack</h1>
 
-<p role="status">Player worth: @p.worth</p>
-<p role="status">Dealer worth: @d.worth</p>
-<button class="btn btn-primary" id="startGame" @onclick="startGame">Start Game</button>
+<p role="status" id="Player">Player worth: @p.worth</p>
+<p role="status">Dealer worth: @dealer.worth</p>
+<button class="btn btn-primary" id="startGame" name="startGame"@onclick="startGame">Start Game</button>
 
 <div>
     <!--    <button class="btn btn-primary" id="double" @onclick="_double">Double</button> -->
@@ -18,18 +18,19 @@
 
     Random rnd = new();
     Player p = new();
-    Dealer d = new();
+    Player dealer = new();
 
     private void startGame()
     {
+        p.worth = 0;
+        dealer.worth = 0;
         //Einsatz
-        addPlayerCard();
-        addDealerCard();
-        addPlayerCard();
-
+        addPlayerCard(p);
+        addPlayerCard(dealer);
+        addPlayerCard(p);
     }
     
-    private void addPlayerCard()
+    private void addPlayerCard(Player p)
     {
         int value = rnd.Next(2, 14);
         if (value >9 && value < 14)
@@ -47,12 +48,6 @@
         p.worth += value;
     }
     
-    private void addDealerCard()
-    {
-        int value = rnd.Next(2, 11);
-        d.worth += value;
-    }
-    
     private void _double()
     {
         
@@ -60,14 +55,44 @@
     
     private void hit()
     {
-        //if (p.worth < 21)
-        addPlayerCard();
+        addPlayerCard(p);
+        if (p.worth == 21)
+        {
+            //BlackJack
+            startGame();
+        }
+
+        if (p.worth > 21)
+        {
+            //Bust
+            //Dealer wins
+            startGame();
+        }
     }
     
     private void stand()
     {
-        p.worth = 0;
-        d.worth = 0;
+        while (dealer.worth < 17)
+        {
+            addPlayerCard(dealer);   
+        }
+        if (dealer.worth <= 21) {
+            if (p.worth < dealer.worth)
+            {
+                //Dealer wins
+                startGame();
+                return;
+            }
+            if (p.worth == dealer.worth)
+            {
+                //draw
+                startGame();
+                return;
+            }
+            
+        }
+        //Player wins
+        startGame();
     }
     
     private void split()
@@ -75,14 +100,4 @@
         
     }
     
-    
-    /*private void IncrementCount()
-    {
-        currentCount++;
-    }
-
-    private void DecrementCount()
-    {
-        currentCount--;
-    }*/
 }
