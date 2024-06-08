@@ -1,6 +1,7 @@
-<h3>Player</h3>
+namespace BlazorWebsite;
 
-@code {
+public class Player
+{
     Random rnd = new();
     public int worth { get; set; }
     public double money { get; set; } = 20;
@@ -29,8 +30,8 @@
         {
             if (worth + value < 22)
             {
-            value = 11;
-            aceCount++;
+                value = 11;
+                aceCount++;
             }
             else
                 value = 1;
@@ -49,7 +50,7 @@
         }
         else if (value == 14)
         {
-                value = 11;
+            value = 11;
         }
 
         hiddenCard = value;

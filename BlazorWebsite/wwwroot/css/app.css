@@ -14,6 +14,21 @@ a, .btn-link {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
+    margin-bottom: 16px;
+}
+
+.btn-hit {
+    color: #fff;
+    background-color: #26b050;
+    border-color: #23b00b;
+    margin-bottom: 16px;
+}
+
+.btn-stand {
+    color: #fff;
+    background-color: #a52834;
+    border-color: #842029;
+    margin-bottom: 16px;
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {

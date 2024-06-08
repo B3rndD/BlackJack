@@ -4,24 +4,39 @@
 <PageTitle>Black Jack</PageTitle>
 <h1>Black Jack</h1>
 
-<div>
-    <p id=money>Available money: @p.money Current Bet: @p.bet</p>
-    <button class="btn btn-primary" id="inBet" name="inBet" @onclick="IncreaseBet">Increase Bet</button>
-    <button class="btn btn-primary" id="deBet" name="deBet" @onclick="DecreaseBet">Decrease Bet</button>
-    <button class="btn btn-primary" id="startGame" name="startGame" @onclick="StartGame">Start Game</button>
+<table>
+    <tr>
+        <td>
+            <div style="margin-bottom: 5%">
+                <p id=money>Available money: @p.money</p>
+                <p id="bet"> Current Bet: @p.bet</p>
+                <button class="btn btn-primary" id="inBet" name="inBet" @onclick="IncreaseBet">Bet +</button>
+                <button class="btn btn-primary" id="deBet" name="deBet" @onclick="DecreaseBet">Bet -</button>
+                <button class="btn btn-primary" id="startGame" name="startGame"  @onclick="StartGame">Start Game!</button>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                <p role="status" id="Player" style="text-align: left">Player score: @p.worth</p>
+                <p role="status" id="Dealer" style="text-align: left">Dealer score: @dealer.worth</p>
+                <p role="status" id=announce style="text-align: left"> @announce</p>
+                <button class="btn btn-primary" id="double" @onclick="_double">Double</button>
+                <button class="btn btn-hit" id="hit" @onclick="Hit">Hit</button>
+                <button class="btn btn-stand" id="stand" @onclick="Stand">Stand</button>
+            </div>
+        </td>
+    </tr>
+</table>
 
-    <p role="status" id="Player">Player worth: @p.worth</p>
-    <p role="status">Dealer worth: @dealer.worth</p>
-    <p role="status" id=announce> @announce</p>
-    <button class="btn btn-primary" id="double" @onclick="_double">Double</button>
-    <button class="btn btn-primary" id="hit" @onclick="Hit">Hit</button>
-    <button class="btn btn-primary" id="stand" @onclick="Stand">Stand</button>
-</div>
+
+
 @code {
     bool gamelock;    
     Player p = new();
     Player dealer = new();
-    string announce = "Please place a Bet";
+    string announce = "Please place a Bet!";
     bool disableAction = true;
 
     private void IncreaseBet()
@@ -51,9 +66,9 @@
     {
         if (!gamelock)
         {
-            gamelock = true;
             if (p.bet != 0)
             {
+                gamelock = true;
                 disableAction = false;
                 announce = "Game ongoing";
                 p.worth = 0;
