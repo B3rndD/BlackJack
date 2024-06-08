@@ -9,8 +9,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80ac436f-4e99-43ff-9954-0cc79394ab9c" name="Changes" comment="complete???">
-      <change beforePath="$PROJECT_DIR$/BlazorWebsite/Pages/BlackJack.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/Pages/BlackJack.razor" afterDir="false" />
+    <list default="true" id="80ac436f-4e99-43ff-9954-0cc79394ab9c" name="Changes" comment="finsihed 2???">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorWebsite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/Layout/NavMenu.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/Layout/NavMenu.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/BlazorWebsite.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/BlazorWebsite.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/BlazorWebsite.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/BlazorWebsite.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/BlazorWebsite.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/BlazorWebsite.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/BlazorWebsite.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/BlazorWebsite.pdb.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/BlazorWebsite.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/BlazorWebsite.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/BlazorWebsite.wasm.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/BlazorWebsite.wasm.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/compressed/fveyapdap7.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/compressed/fveyapdap7.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/compressed/qcqyqb86gp.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/compressed/qcqyqb86gp.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/compressed/whi4rim0ps.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/compressed/whi4rim0ps.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/ref/BlazorWebsite.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/ref/BlazorWebsite.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/refint/BlazorWebsite.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/refint/BlazorWebsite.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/scopedcss/Layout/NavMenu.razor.rz.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/scopedcss/Layout/NavMenu.razor.rz.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/scopedcss/bundle/BlazorWebsite.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/scopedcss/bundle/BlazorWebsite.styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/scopedcss/projectbundle/BlazorWebsite.bundle.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/scopedcss/projectbundle/BlazorWebsite.bundle.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/tmp-webcil/BlazorWebsite.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/tmp-webcil/BlazorWebsite.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/webcil/BlazorWebsite.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorWebsite/obj/Debug/net8.0/webcil/BlazorWebsite.wasm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +59,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Schule/4BHWII/SWP/C# Rider/BlazorWebsite/BlazorWebsite/Pages/BlackJack.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Schule/4BHWII/SWP/C# Rider/BlazorWebsite/BlazorWebsite/Pages/BlackJack.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Schule/4BHWII/SWP/C# Rider/BlazorWebsite/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlazorWebsite/wwwroot/css/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
@@ -133,7 +160,7 @@
       <workItem from="1717759128093" duration="1000" />
       <workItem from="1717759141601" duration="16000" />
       <workItem from="1717759300933" duration="2244000" />
-      <workItem from="1717844833738" duration="15416000" />
+      <workItem from="1717844833738" duration="17096000" />
     </task>
     <task id="LOCAL-00001" summary="nec">
       <option name="closed" value="true" />
@@ -167,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717860270798</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finsihed 2???">
+      <option name="closed" value="true" />
+      <created>1717860469120</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717860469120</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +227,7 @@
     <MESSAGE value="a" />
     <MESSAGE value="y" />
     <MESSAGE value="complete???" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete???" />
+    <MESSAGE value="finsihed 2???" />
+    <option name="LAST_COMMIT_MESSAGE" value="finsihed 2???" />
   </component>
 </project>
