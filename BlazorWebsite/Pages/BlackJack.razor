@@ -139,6 +139,8 @@
                 announce = "Player has bust! Lost: " + p.bet;
                 p.bet = 0;
                 disableAction = true;
+                await dealer.CalcHidden();
+                StateHasChanged();
                 gamelock = false;
             }
         }
