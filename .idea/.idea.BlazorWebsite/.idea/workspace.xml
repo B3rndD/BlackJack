@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80ac436f-4e99-43ff-9954-0cc79394ab9c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorWebsite/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="80ac436f-4e99-43ff-9954-0cc79394ab9c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,9 +32,6 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Schule/4BHWII/SWP/C# Rider/BlazorWebsite/BlazorWebsite/Pages/BlackJack.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Schule/4BHWII/SWP/C# Rider/BlazorWebsite/BlazorWebsite/Pages/BlackJack.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Schule/4BHWII/SWP/C# Rider/BlazorWebsite/BlazorWebsite/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Schule/4BHWII/SWP/C# Rider/BlazorWebsite/BlazorWebsite/obj/Debug/net8.0/BlazorWebsite.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlazorWebsite/wwwroot/css/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -136,6 +131,7 @@
       <workItem from="1717759141601" duration="16000" />
       <workItem from="1717759300933" duration="2244000" />
       <workItem from="1717844833738" duration="23186000" />
+      <workItem from="1718002144965" duration="2526000" />
     </task>
     <task id="LOCAL-00001" summary="nec">
       <option name="closed" value="true" />
@@ -193,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717868436039</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="d">
+      <option name="closed" value="true" />
+      <created>1718007070913</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718007070913</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +225,7 @@
     <MESSAGE value="finsihed 2???" />
     <MESSAGE value="donedone" />
     <MESSAGE value="ddoonnee" />
-    <option name="LAST_COMMIT_MESSAGE" value="ddoonnee" />
+    <MESSAGE value="d" />
+    <option name="LAST_COMMIT_MESSAGE" value="d" />
   </component>
 </project>
