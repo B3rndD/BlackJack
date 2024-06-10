@@ -61,6 +61,18 @@
             }
         }
     }
+
+    private void Reset()
+    {
+        gamelock = true;
+        disableAction = false;
+        announce = "Game ongoing";
+        p.worth = 0;
+        p.aceCount = 0;
+        dealer.aceCount = 0;
+        dealer.worth = 0;
+        dealer.hiddenCard = 0;
+    }
     
     private async Task StartGame()
     {
@@ -68,13 +80,7 @@
         {
             if (p.bet != 0)
             {
-                gamelock = true;
-                disableAction = false;
-                announce = "Game ongoing";
-                p.worth = 0;
-                p.aceCount = 0;
-                dealer.worth = 0;
-                dealer.hiddenCard = 0;
+                Reset();
                 await p.AddPlayerCard();
                 StateHasChanged();
                 await dealer.AddPlayerCard();

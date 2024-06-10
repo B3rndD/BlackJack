@@ -28,7 +28,7 @@ public class Player
         }
         else if (value == 14)
         {
-            if (worth + value < 22)
+            if (worth + 11 < 22)
             {
                 value = 11;
                 aceCount++;
