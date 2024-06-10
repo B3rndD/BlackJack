@@ -7,12 +7,16 @@
 <table>
     <tr>
         <td>
-            <div style="margin-bottom: 5%">
+            <div>
                 <p id=money>Available money: @p.money</p>
                 <p id="bet"> Current Bet: @p.bet</p>
                 <button class="btn btn-primary" id="inBet" name="inBet" @onclick="IncreaseBet">Bet +</button>
                 <button class="btn btn-primary" id="deBet" name="deBet" @onclick="DecreaseBet">Bet -</button>
                 <button class="btn btn-primary" id="startGame" name="startGame"  @onclick="StartGame">Start Game!</button>
+            </div>
+            <div  style="margin-bottom: 5%">
+                <button class="btn btn-money" id="allIn" name="allIn" @onclick="AllIn">All In!</button>
+                <button class="btn btn-money" id="Reset" name="ResetBet" @onclick="ResetBet">Reset Bet!</button>
             </div>
         </td>
     </tr>
@@ -38,7 +42,28 @@
     Player dealer = new();
     string announce = "Please place a Bet!";
     bool disableAction = true;
-    
+
+
+    private void AllIn()
+    {
+        if (!gamelock)
+        {
+            while (p.money > 0.5)
+            {
+                IncreaseBet();
+            }
+        }
+    }
+    private void ResetBet()
+    {
+        if (!gamelock)
+        {
+            while (p.bet > 0.5)
+            {
+                DecreaseBet();
+            }
+        }
+    }
 
     private void IncreaseBet()
     {
