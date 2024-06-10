@@ -19,8 +19,8 @@
     <tr>
         <td>
             <div>
-                <p role="status" id="Player" style="text-align: left">Player score: @p.worth Aces: @p.aceCount</p>
-                <p role="status" id="Dealer" style="text-align: left">Dealer score: @dealer.worth</p>
+                <p role="status" id="Player" style="text-align: left">Player score: @p.score Aces: @p.aceCount</p>
+                <p role="status" id="Dealer" style="text-align: left">Dealer score: @dealer.score</p>
                 <p role="status" id=announce style="text-align: left"> @announce</p>
                 <button class="btn btn-primary" id="double" @onclick="_double">Double</button>
                 <button class="btn btn-hit" id="hit" @onclick="Hit">Hit</button>
@@ -38,15 +38,15 @@
     Player dealer = new();
     string announce = "Please place a Bet!";
     bool disableAction = true;
+    
 
     private void IncreaseBet()
     {
         if (!gamelock)
         {
-            if (p.money > 0)
+            if (p.money > 0.5)
             {
                 p.IncreaseBet();
-                p.money -= 0.5;
             }
         }
     }
@@ -54,10 +54,9 @@
     {
         if (!gamelock)
         {
-            if (p.bet > 0)
+            if (p.bet > 0.5)
             {
                 p.DecreaseBet();
-                p.money += 0.5;
             }
         }
     }
@@ -67,10 +66,10 @@
         gamelock = true;
         disableAction = false;
         announce = "Game ongoing";
-        p.worth = 0;
+        p.score = 0;
         p.aceCount = 0;
         dealer.aceCount = 0;
-        dealer.worth = 0;
+        dealer.score = 0;
         dealer.hiddenCard = 0;
     }
     
@@ -88,7 +87,7 @@
                 await p.AddPlayerCard();
                 StateHasChanged();
                 dealer.AddHiddenCard();
-                if (dealer.worth == 10)
+                if (dealer.score == 10)
                 {
                     if (dealer.hiddenCard == 11)
                     {
@@ -96,7 +95,7 @@
                         return;
                     }
                 }
-                else if (dealer.worth == 11)
+                else if (dealer.score == 11)
                 {
                     if (dealer.hiddenCard == 10)
                     {
@@ -104,7 +103,7 @@
                         return;
                     }
                 }
-                if (p.worth == 21)
+                if (p.score == 21)
                 {
                     //BlackJack
                     p.money += p.bet * 1.5;
@@ -127,12 +126,12 @@
             await p.AddPlayerCard();
             StateHasChanged();
 
-            if (p.worth > 21)
+            if (p.score > 21)
             {
                 if (p.aceCount > 0)
                 {
                     p.aceCount--;
-                    p.worth -= 10;
+                    p.score -= 10;
                     return;
                 }
                 //Bust
@@ -152,13 +151,13 @@
             disableAction = true;
             await dealer.CalcHidden();
             StateHasChanged();
-            while (dealer.worth < 17)
+            while (dealer.score < 17)
             {
                 await dealer.AddPlayerCard();
                 StateHasChanged();
             }
-            if (dealer.worth <= 21) {
-                if (p.worth < dealer.worth)
+            if (dealer.score <= 21) {
+                if (p.score < dealer.score)
                 {
                     //Dealer wins
                     announce = "Dealer wins! Lost: " + p.bet;
@@ -166,10 +165,10 @@
                     gamelock = false;
                     return;
                 }
-                if (p.worth == dealer.worth)
+                if (p.score == dealer.score)
                 {
                     //draw
-                    announce = "Draw!";
+                    announce = "Push!";
                     gamelock = false;
                     return;
                 }

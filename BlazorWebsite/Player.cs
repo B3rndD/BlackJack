@@ -3,7 +3,7 @@ namespace BlazorWebsite;
 public class Player
 {
     Random rnd = new();
-    public int worth { get; set; }
+    public int score { get; set; }
     public double money { get; set; } = 20;
     public double bet { get; set; }
     public int hiddenCard { get; set; }
@@ -11,12 +11,14 @@ public class Player
 
     public void IncreaseBet()
     {
-        bet+=0.5;
+        bet++;
+        money--;
     }
 
     public void DecreaseBet()
     {
-        bet-=0.5;
+        bet--;
+        money++;
     }
 
     public async Task AddPlayerCard()
@@ -28,7 +30,7 @@ public class Player
         }
         else if (value == 14)
         {
-            if (worth + 11 < 22)
+            if (score + 11 < 22)
             {
                 value = 11;
                 aceCount++;
@@ -36,8 +38,8 @@ public class Player
             else
                 value = 1;
         }
-        
-        worth += value;
+
+        score += value;
         await Task.Delay(300);
     }
 
@@ -58,7 +60,7 @@ public class Player
 
     public async Task CalcHidden()
     {
-        worth += hiddenCard;
+        score += hiddenCard;
         await Task.Delay(300);
     }
 }
