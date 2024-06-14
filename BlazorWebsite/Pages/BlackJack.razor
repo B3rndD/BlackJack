@@ -19,6 +19,11 @@
                 <button class="btn btn-money" id="Reset" name="ResetBet" @onclick="ResetBet">Reset Bet!</button>
             </div>
         </td>
+        <td>
+            <div>
+                <button class="btn btn-iM" id="increaseMoney" name="increaseMoney"  @onclick="IncreaseMoney">💸</button>
+            </div>
+        </td>
     </tr>
     <tr>
         <td>
@@ -43,7 +48,11 @@
     string announce = "Please place a Bet!";
     bool disableAction = true;
 
-
+    private void IncreaseMoney()
+    {
+        p.money++;
+    }
+    
     private void AllIn()
     {
         if (!gamelock)
